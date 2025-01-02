@@ -10,7 +10,7 @@ import threading
 import time
 
 # Version Checking and Script Update Logic
-CURRENT_VERSION = "3.0.0"  # Current version of the script
+CURRENT_VERSION = "3.0.1"  # Current version of the script
 UPDATE_CHECK_INTERVAL = 28800  # 8 hours
 
 
@@ -188,10 +188,10 @@ ttk.Button(root, text="Download", command=start_download).grid(
 
 # Check for updates in a separate thread before running the GUI
 version_url = (
-    "https://raw.githubusercontent.com/your-username/your-repo/main/version.txt"
+    "https://raw.githubusercontent.com/SimpleCarrot42/YTAD/refs/heads/main/versions.txt"
 )
 script_url = (
-    "https://raw.githubusercontent.com/your-username/your-repo/main/your-script.py"
+    "https://raw.githubusercontent.com/SimpleCarrot42/YTAD/refs/heads/main/main.py"
 )
 
 update_thread = threading.Thread(
